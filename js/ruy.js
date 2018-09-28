@@ -103,3 +103,29 @@ timelineParameters
       duration: 3000,
       offset: 1800
     });
+
+const circle = new mojs.Shape({
+  shape:        'movingCircle',
+  scale:        { 0 : 1, easing: 'cubic.out' },
+  fill:         { 'cyan': 'yellow', easing: 'cubic.in' },
+
+  duration:     2000,
+  repeat:       3999,
+}).play();
+
+const tri = new mojs.Shape({
+  shape:      'movingPolygon',
+  fill:       'orange',
+  radius:     65,
+  angle:      { [-120]: -40 },
+  x:          { [-200]: 20 },
+  y:          { [50]: -20 },
+  scaleX:     { 0 : 1.3 },
+
+  repeat:     10,
+  duration:   800,
+  isYoyo:     true,
+  backwardEasing: 'sin.in',
+
+  isShowEnd:  false
+}).play();
