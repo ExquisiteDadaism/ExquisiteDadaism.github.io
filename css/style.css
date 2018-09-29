@@ -33,7 +33,7 @@
 
 .square {
   float: left;
-  display: block;
+  display: inline;
   position: absolute;
   left: 350px;
   top: 0;
@@ -47,7 +47,7 @@
 
 #sparrow {
   position: absolute;
-  left: 600px;
+  left: 400px;
   top: 120px;
 }
 
