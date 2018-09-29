@@ -1,6 +1,6 @@
 const RAINBOW = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
-const BEFORE_TEXT = 'Touch';
-const AFTER_TEXT = 'Unrelenting Gay';
+const BEFORE_TEXT = 'touch';
+const AFTER_TEXT = 'unrelenting gay';
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -25,7 +25,7 @@ $(document).ready(function() {
   $.get("img/off.svg", function(data) {
     var div = document.getElementById('sparrow');
     div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
-    $('#sparrow').append('<p id="sparrow-text">Touch</p>');
+    $('#sparrow').append(`<p id="sparrow-text">${BEFORE_TEXT}</p>`);
     $('#sparrow-text').click({colors: RAINBOW}, rainbows)
   });
 });  
