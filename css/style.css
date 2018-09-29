@@ -1,3 +1,43 @@
+/* Ruy's styles */
+
+#Hello {
+  fill:#488F71;
+  position: relative;
+  left: 250px;
+  top: 250px;
+  transform: translate(400px, 100px);
+}
+
+#World {
+  fill:#4E448D;
+  position: relative;
+  left: 250px;
+  top: 250px;
+  transform: translate(400px, 300px);
+}
+
+#AbstractWoman {
+  position: relative;
+  left: 0;
+  top: 250px;
+  z-index: 0;
+  transform: scale(.75) translate(175px, 560px);
+}
+
+#BirdcageGirl {
+  position: relative;
+  left:0;
+  top:0;
+  z-index: 1;
+}
+
+.square {
+  float: left;
+  display: block;
+  position: relative;
+  left: 0;
+}
+
 /* Sparrow's Styles */
 #sparrowSvg {
   height: 400px;
