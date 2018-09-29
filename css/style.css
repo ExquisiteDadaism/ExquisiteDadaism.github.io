@@ -50,9 +50,13 @@
   top: 120px;
 }
 
+#sparrow:hover {
+  cursor: progress;
+}
+
 #sparrow-text {
   width: 200px;
-  z-index:10;
+  z-index: 2;
   text-align: right;
   color: darkgray;
   font-family: "Comic Sans MS", cursive, sans-serif
@@ -66,5 +70,5 @@
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: 1;
 }
