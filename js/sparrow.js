@@ -23,8 +23,7 @@ async function rainbows(event) {
 
 $(document).ready(function() {
   $.get("img/off.svg", function(data) {
-    var div = document.getElementById('sparrow');
-    div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
+    $('#sparrow').html(new XMLSerializer().serializeToString(data.documentElement));
     $('#sparrow').append(`<p id="sparrow-text">${BEFORE_TEXT}</p>`);
     $('#sparrow-text').click({colors: RAINBOW}, rainbows)
   });
