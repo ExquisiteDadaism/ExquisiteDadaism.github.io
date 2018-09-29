@@ -1,3 +1,4 @@
+/* Ruy's styles */
 
 #Hello {
   fill:#488F71;
@@ -35,4 +36,33 @@
   display: block;
   position: relative;
   left: 0;
+}
+
+/* Sparrow's Styles */
+#sparrowSvg {
+  height: 400px;
+  width: 400px;
+}
+
+#sparrow {
+  position: absolute;
+}
+
+#sparrow-text {
+  width: 200px;
+  z-index:10;
+  text-align: right;
+  color: darkgray;
+  font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+#sparrow-text:hover {
+  cursor: progress;
+}
+
+#sparrowSvg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
