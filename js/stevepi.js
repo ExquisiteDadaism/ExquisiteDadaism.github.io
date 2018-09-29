@@ -3,22 +3,41 @@
 $(document).ready(function() {
     console.log( "doc.ready complete" );
 function fadeInOut() {
-  $( "#eye5" ).fadeIn( "slow", function() {
+/*
+  $( ".dadaBG" ).animate( "5", function() {
       // Animation complete
       console.log('eye5 fadeIn complete');
-      $("#eye5").fadeOut( "slow", function() {
+      $(".dadaBG").animate( "5", function() {
         fadeInOut();
-        moveEye5();
       });
     }
-  )}
+  )
+*/
 
-function moveEye5() {
-  $("#eye5").animate({
-    left:"+=50px",
-  }, 1000);
+
+$( ".dadaBG" ).animate({
+    opacity: 1,
+  }, 5000, function() {
+    $( ".dadaBG" ).animate({
+        opacity: 0,
+      }, 5000, function() {
+        fadeInOut();
+  });
+});
+
+
 }
-
 fadeInOut();
+
+
+
+
+
+
+
+
+
+
+
 
 });

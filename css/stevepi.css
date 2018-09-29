@@ -1,7 +1,22 @@
 /* stevepi's css for the equisitie corpse */
 
-#eye5 {
-  position: relative;
-  left: 10px;
-  top: 10px;
+body {
+  margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+ .dadaBG {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  float: left;
+  background: url(../img/eye-05.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
